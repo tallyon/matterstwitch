@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+
+    "name": "MattersTwitch",
+    "description": "",
+    "version": "0.1",
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "kappa.png",
+        "default_title": "MattersTwitch"
+    },
+    "permissions": [
+        "activeTab"
+        ]
+}
